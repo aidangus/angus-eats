@@ -1,9 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>simple-vue-app</title>
+    <title>Angus Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-16x16.png">
   </head>
   <body>
-    <div>Hello World</div>
+    <div id="navbar">
+      <div id="logo-wrapper">
+        <img class="unselectable" src="images/logo-192x192.png">
+        <div class="unselectable" id="logo-title">
+          Angus Eats
+        </div>
+      </div>
+      <div id="search-wrapper">
+        <div id="search-icon-wrapper">
+          <img class="unselectable" src="images/search.png">
+        </div>
+        <input placeholder="Search Bar">
+      </div>
+      <div id="menu-wrapper">
+        <div class="menu-button unselectable">
+          <img src="images/recipe-book.png">
+        </div>
+        <div class="menu-button unselectable">
+          <img src="images/network.png">
+        </div>
+        <div class="menu-button unselectable">
+          <img src="images/menu.png">
+        </div>
+        <div class="menu-button unselectable">
+          <img src="images/question.png">
+        </div>
+      </div>
+    </div>
+    <div id="main-zone">
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+      <p>Some text some text some text some text..</p>
+    </div>
   </body>
 </html>
