@@ -3,6 +3,7 @@
 }
 
 html, body {
+  overflow: hidden;
   height: 100%;
   margin: 0px;
   background-color: var(--off-white);
@@ -16,14 +17,19 @@ html, body {
   box-shadow: 0 4px 2px -2px #BBBBBB;
 }
 
+.unselectable {
+  user-select: none;
+}
 
 /* LOGO AREA */
 
 #logo-wrapper {
+  cursor: pointer;
   padding: 8px;
 }
 
 #logo-wrapper img {
+  cursor: pointer;
   float: left;
   width: 48px;
   height: 48px;
@@ -53,6 +59,7 @@ html, body {
   border-width: 1px 0px 1px 1px;
   border-color: #BBBBBB;
   border-style: solid;
+  border-radius: 18px 0px 0px 18px;
 }
 
 #search-icon-wrapper img {
@@ -64,9 +71,16 @@ html, body {
 #search-wrapper input {
   margin: 9px 6px 9px 0px;
   height: 34px;
+  width: 500px;
   border-width: 1px 1px 1px 0px;
   border-color: #BBBBBB;
   border-style: solid;
+  border-radius: 0px 18px 18px 0px;
+  font-size: 20px;
+}
+
+#search-wrapper input:focus {
+  outline: none;
 }
 
 
@@ -77,9 +91,15 @@ html, body {
 }
 
 .menu-button {
+  cursor: pointer;
   height: 36px;
   float: left;
   padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.menu-button:hover {
+  background-color: #E6EAEF;
 }
 
 .menu-button img {
@@ -90,5 +110,7 @@ html, body {
 
 
 #main-zone {
-  height: calc(100% - 64px);\
+  overflow: auto;
+  margin: 18px 10px;
+  height: calc(100% - 100px);
 }
